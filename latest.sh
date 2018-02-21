@@ -59,6 +59,8 @@ cat >>/etc/ld.so.conf <<EOF
 EOF
 ldconfig
 
+cd /opt/ffmpegtookit
+
 sh tools_freetype.sh
 sh tools_ynasm.sh
 
@@ -89,6 +91,7 @@ sh ac_libopus.sh
 
 #### Video Package ####
 sh vc_libtheora.sh
+sh sh vc_vpx.sh
 sh vc_xvid.sh
 sh vc_x264.sh
 sh vc_x265.sh
